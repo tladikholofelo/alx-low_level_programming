@@ -17,17 +17,21 @@
  */
 int main(void)
 {
-	int d;
+	int num1;
+	int num2;
 
-	for (d = 0; d < 100; d++)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-
-		if (d != 99)
+		for (num2 = (num1 + 1); num2 <= 9; num2++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar('0' + num1);
+			putchar('0' + num2);
+
+			if (num1 < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
