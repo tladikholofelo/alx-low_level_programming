@@ -7,8 +7,6 @@
  * For numbers which are multiples of both three and five,
  * print FizzBuzz.
  * Each number or word should be separated by a space
- *
- * Return: Always 0. (Success)
  */
 
 int main(void)
@@ -39,5 +37,6 @@ int main(void)
 		i++;
 	}
 	printf("\n");
+
 	return (0);
 }
