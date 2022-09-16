@@ -7,6 +7,8 @@
  * For numbers which are multiples of both three and five,
  * print FizzBuzz.
  * Each number or word should be separated by a space
+ *
+ * Return: Void
  */
 
 int main(void)
