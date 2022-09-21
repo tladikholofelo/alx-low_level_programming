@@ -5,6 +5,8 @@
 /**
  * main - generates random valid passwords for the program 101-crackme.
  *
+ * Use man srand, rand, time, gdb and objdump to help.
+ *
  * Return: 0.
  */
 
