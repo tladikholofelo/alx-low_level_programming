@@ -7,18 +7,16 @@
  *
  * Return: the pointer to s, or NULL if characer not found
  */
-char *_strchr(char *s, char *c)
+char *_strchr(char *s, char c)
 {
-	int a = 0, b;
-
-	while (s[a])
-		a++;
-
-	for (b = 0; b < a; b++)
+	while (*s)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+		s++;
+
+		if (*s == c)
+		{
+			return (s);
+		}
 	}
-	return ('\0');
+	return (0);
 }
