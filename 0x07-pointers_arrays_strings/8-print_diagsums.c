@@ -21,5 +21,5 @@ void print_diagsums(int *a, int size)
 		a += size;
 	}
 	printf("%d, ", j);
-	printf("%d, ", k);
+	printf("%d\n, ", k);
 }
