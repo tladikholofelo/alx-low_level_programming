@@ -6,6 +6,10 @@
  * print_dog - prints the details of the dog using struct dog
  * @d: pointer to the dog
  *
+ * Return: If an element of d is NULL, print (nil).
+ * If name is NULL, print Name: (nil).
+ * If d is NULL print nothing.
+ *
  */
 void print_dog(struct dog *d)
 {
