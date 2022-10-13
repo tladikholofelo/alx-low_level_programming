@@ -7,7 +7,7 @@
  *
  * Return: the sum of a and b
  */
-int int op_add(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
