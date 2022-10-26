@@ -33,7 +33,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t nodes = 0;
 	listp_t *cap, *new, *add;
 
-	p = NULL;
+	cap = NULL;
 	while (head != NULL)
 	{
 		new = malloc(sizeof(listp_t));
