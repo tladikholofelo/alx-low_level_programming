@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * free_listp - frees a linked list
+ * free_listp2 - frees a linked list
  * @head: the head of the list
  */
-void free_listp(listp_t **head)
+void free_listp2(listp_t **head)
 {
 	listp_t *temp, *copy;
 
@@ -21,7 +21,7 @@ void free_listp(listp_t **head)
 }
 
 /**
- * free_listint_safe - prints a listint_t linked list
+ * free_listint_safe - frees a linked list
  * @h: the head of the list
  *
  * Return: the size of the list that was free'd
@@ -52,7 +52,7 @@ size_t free_listint_safe(const listint_t **h)
 			if (*h == add->p)
 			{
 				*h = NULL;
-				free_listp(&cap);
+				free_listp2(&cap);
 				return (nodes);
 			}
 		}
@@ -64,6 +64,6 @@ size_t free_listint_safe(const listint_t **h)
 	}
 
 	*h = NULL;
-	free_listp(&cap);
+	free_listp2(&cap);
 	return (nodes);
 }
