@@ -26,7 +26,7 @@ void free_listp2(listp_t **head)
  *
  * Return: the size of the list that was free'd
  */
-size_t free_listint_safe(const listint_t **h)
+size_t free_listint_safe(listint_t **h)
 {
 	size_t nodes = 0;
 	listp_t *cap, *new, *add;
