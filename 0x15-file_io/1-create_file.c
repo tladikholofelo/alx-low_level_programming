@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	for (alpha - 0, text_content[alpha]; alpha++)
+	for (alpha = 0; text_content[alpha]; alpha++)
 		;
 
 	file_write =  write(file, text_content, alpha);
